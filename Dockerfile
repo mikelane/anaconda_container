@@ -5,7 +5,7 @@ MAINTAINER Mike Lane <mikelane@gmail.com>
 SHELL ["/bin/bash", "-c"]
 
 RUN useradd --create-home --shell /bin/bash --user-group jupyter
-RUN mkdir -p /opt/notebooks
+RUN mkdir -p /opt/notebooks && chown jupyter:jupyter /opt/notebooks
 
 USER jupyter
 
