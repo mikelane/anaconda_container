@@ -1,3 +1,6 @@
 .ipynb/
 *.ipynb
 *.ipynb_checkpoints
+.python-version
+__pycache__/
+
